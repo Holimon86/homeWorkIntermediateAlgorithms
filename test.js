@@ -68,3 +68,19 @@ var Person = function(firstAndLast) {
   }
   
     orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
+
+    function palindrome(str) {
+        return (
+          str.replace(/[\w_]/g, "").toLowercase() ===
+          str
+          .replace((/[\w_]/g, ""))
+          .toLowerCase()
+          .split("")
+          .reverse()
+          .join("")
+        );
+      }
+      
+      
+      
+      palindrome("eye");
